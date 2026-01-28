@@ -1,8 +1,8 @@
-import "dotenv/config";
-import express from "express";
-import cors from "cors";
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
 
-import questionnaireRoutes from "./routes/questionnaire.routes.js";
+const questionnaireRoutes = require("./routes/questionnaire.routes");
 
 const app = express();
 
